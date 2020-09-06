@@ -4,7 +4,7 @@ from datetime import datetime
 
 from matplotlib import pyplot as plt
 
-filename = 'data/death_valley_2018_simple.csv'
+filename = 'death_valley_2018_simple.csv'
 with open(filename) as f:
     reader = csv.reader(f)
     header_row = next(reader)
@@ -38,5 +38,3 @@ with open(filename) as f:
     plt.tick_params(axis='both', which='major', labelsize=12)
 
     plt.show()
-
-

@@ -9,6 +9,6 @@ print(f'Status code: {r.status_code}')
 
 # Анализ структуры данных
 response_dict = r.json() # Делаем из json большой словарь
-readable_file = 'data/readable_hn_data.json'
+readable_file = 'readable_hn_data.json'
 with open(readable_file, 'w') as f:
     json.dump(response_dict, f, indent=4)

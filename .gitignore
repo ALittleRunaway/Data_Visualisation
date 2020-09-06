@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Some files for me
+*.html
+My_stuff/
+
 # C extensions
 *.so
 
@@ -127,5 +131,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-Pictures_of_graphics

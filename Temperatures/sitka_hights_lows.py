@@ -4,7 +4,7 @@ from datetime import datetime
 
 from matplotlib import pyplot as plt
 
-filename = 'data/sitka_weather_2018_simple.csv'
+filename = 'sitka_weather_2018_simple.csv'
 with open(filename) as f:
     reader = csv.reader(f) # Объект чтения данных
     header_row = next(reader) # next - читает следующую строку, т.е. тут: первую
@@ -32,7 +32,7 @@ with open(filename) as f:
     plt.fill_between(dates, highs, lows, facecolor='blue', alpha=0.1)
 
     # Форматирование диаграммы
-    plt.title('Daily high and low temperatures - 2018', font='monospace', fontsize=18)
+    plt.title('Daily high and low temperatures - 2018\nSitka', font='monospace', fontsize=18)
     plt.xlabel('', font='monospace', fontsize=16)
     fig.autofmt_xdate() # Делает диагональку и, наверное, что-то с датой
     plt.ylabel('Temeperature (F)', font='monospace', fontsize=16)

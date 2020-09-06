@@ -5,11 +5,11 @@ from plotly.graph_objs import Scattergeo, Layout
 from plotly import offline
 
 # Изучение структуры данных
-filename = 'data/eq_data_30_day_m1.json'
+filename = 'eq_data_30_day_m1.json'
 with open(filename) as f:
     all_eq_data = json.load(f) # load - преобразует данные в огромный словарь, что удобно для Python
 
-# readable_file = 'data/readable_eq_data.json'
+# readable_file = 'readable_eq_data.json'
 # with open(readable_file, 'w') as f:
 #     json.dump(all_eq_data, f, indent=4) # dump - об. данных json, об. файла и indent=4 (форматирование с отступами)
 
@@ -45,7 +45,7 @@ data = [{
     },
 }]
 
-my_layout = Layout(title='Global Earthquakes')
+my_layout = Layout(title='Global Earthquakes for a month in 2018')
 
 fig = {'data': data, 'layout': my_layout}
 offline.plot(fig, filename='global_earthquakes.html')

@@ -25,13 +25,6 @@ class RandomWalk():
         while len(self.x_values) < self.num_points:
 
             # Определение направления и длины перемещения
-            # x_direction = choice([1, -1])
-            # x_distance = choice([0, 1, 2, 3, 4])
-            # x_step = x_direction * x_distance # [-4, 4]
-            #
-            # y_direction = choice([1, -1])
-            # y_distance = choice([0, 1, 2, 3, 4])
-            # y_step = y_direction * y_distance # [-4, 4]
             x_step = self.get_step()
             y_step = self.get_step()
 

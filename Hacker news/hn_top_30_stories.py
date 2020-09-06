@@ -65,4 +65,4 @@ my_layout = {
     },
 }
 fig = {'data': data, 'layout': my_layout}
-offline.plot(fig, filename='Pictures of graphics/hn_visual.html')
+offline.plot(fig, filename='hn_visual.html')
